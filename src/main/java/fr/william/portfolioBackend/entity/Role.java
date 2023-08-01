@@ -1,4 +1,5 @@
 package fr.william.portfolioBackend.entity;
 
-public class Site {
+public enum Role {
+    ADMIN,USER,PROFIL
 }

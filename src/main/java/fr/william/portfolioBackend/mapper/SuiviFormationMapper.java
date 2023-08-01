@@ -1,4 +1,4 @@
 package fr.william.portfolioBackend.mapper;
 
-public interface ProfilMapper {
+public interface SuiviFormationMapper {
 }

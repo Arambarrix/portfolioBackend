@@ -1,19 +1,20 @@
 package fr.william.portfolioBackend.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity
-public class Caracteristique {
+public class Localite {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
     private Long id;
     private String nom;
-    private String description;
+    @ManyToOne
+    @JoinColumn(name = "ville_id")
+    private Ville ville;
 
 }

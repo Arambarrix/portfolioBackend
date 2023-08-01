@@ -1,11 +1,17 @@
 package fr.william.portfolioBackend.entity;
 
-import jakarta.persistence.Entity;
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Getter
 @Setter
 @Entity
-public class Formation extends Projet{
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class Formation {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
+
 }

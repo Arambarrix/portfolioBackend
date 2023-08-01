@@ -9,11 +9,10 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Caracteristique {
+public class NomRue {
     @Id
     @Column(name = "id", nullable = false)
     private Long id;
     private String nom;
-    private String description;
 
 }

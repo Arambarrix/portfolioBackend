@@ -1,6 +1,6 @@
 package fr.william.portfolioBackend.entity;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,6 +13,6 @@ import java.util.List;
 @Entity
 public class Article extends Realisation{
     private Date datePublication;
+    @OneToMany
     private List<Ressource> ressources;
-
 }
