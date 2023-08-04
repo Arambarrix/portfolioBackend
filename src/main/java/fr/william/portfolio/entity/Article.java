@@ -6,13 +6,14 @@ import lombok.Setter;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 @Getter
 @Setter
 @Entity
-public class Article{
+public class Article implements Serializable {
     @Id
     private Long id;
     private String description;

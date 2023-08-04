@@ -1,9 +1,7 @@
 package fr.william.portfolio.mapper;
 
 import fr.william.portfolio.dto.RealisationDTO;
-import fr.william.portfolio.dto.ProjetDTO;
 import fr.william.portfolio.entity.Realisation;
-import fr.william.portfolio.entity.Projet;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

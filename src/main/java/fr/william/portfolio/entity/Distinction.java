@@ -9,12 +9,13 @@ import lombok.Setter;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Getter
 @Setter
 @Entity
-public class Distinction{
+public class Distinction implements Serializable {
     @Id
     private Long id;
     private String description;

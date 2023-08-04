@@ -8,5 +8,5 @@ public class StructureDTO {
     private Long id;
     private String nom;
     private TypeStructure typeStructure;
-    private AdresseDTO adresseDTO;
+    private AdresseDTO adresse;
 }

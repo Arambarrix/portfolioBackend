@@ -6,5 +6,5 @@ import lombok.Data;
 public class LocaliteDTO {
     private Long id;
     private String nom;
-    private VilleDTO villeDTO;
+    private VilleDTO ville;
 }
